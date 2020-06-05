@@ -29,10 +29,13 @@ const ApprovedDenied = () => (
   <div className="chart-container">
     <ResponsiveBar
       data={data}
+      maxValue={800}
       keys={['approved', 'denied']}
+      colors={['#006666', '#7f3844']}
       indexBy="date"
       margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
       padding={0.3}
+      enableLabel={false}
     />
   </div>
 );
